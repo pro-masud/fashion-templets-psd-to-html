@@ -1,0 +1,247 @@
+/* include font here */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('../fonts/MYRIADPRO-REGULAR.OTF'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
+
+/* 
+    font-family: 'Karla', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Fira Code', monospace;
+
+*/
+
+/* basic styling here now */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* header top section start */
+.header-top-area{
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .7s;
+}
+.header-fix{
+    position: fixed;
+    top:0;
+    left: 0;
+    background: #fff;
+}
+.header-top-area a{
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #5b3f61;
+    font-weight: 700;
+    font-family: "Karla";
+}
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+
+.menu-toggler{
+    background: none;
+    border: none;
+    padding-left: 20px;
+    display: none;
+}
+
+.menu-toggler span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #f1022f;
+    margin: 6px 0;
+}
+.menu-toggler span:nth-child(2){
+    width:20px;
+}
+.menu-toggler span:nth-child(3){
+    width:25px;
+}
+
+
+
+.header-left ul{
+    margin: 0;
+}
+
+.header-left ul li{
+    display: inline-block;
+}
+
+.header-left ul li a{
+    padding: 15px;
+    display: inline-block;
+}
+
+.navbar{
+    width:100%;
+    position: static;
+}
+.navbar .sidebar-header{
+    display: none;
+}
+
+.navbar .sidebar-header a{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.navbar .sidebar-header i{
+    font-size: 24px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.header-right a{
+    padding: 15px;
+    display: inline-block;
+}
+
+.header-right a i{
+    padding-left: 12px;
+}
+
+.header-right a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.hero-section{
+    background-image: url(../img/bannar.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.single-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-side .heading span{
+    display: block;
+    text-transform: uppercase;
+}
+.single-side .heading span:nth-child(1){
+    font-size: 120px;
+    line-height: 100px;
+    color: #e84f88;
+    font-weight: 300;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.single-side .heading span:nth-child(2){
+    font-size: 120px;
+    line-height: 100px;
+    color: #e84f88;
+    font-weight: 700;
+    font-family: 'Source Code Pro', monospace;
+    font-style: italic;
+}
+
+.single-side .heading span:nth-child(3){
+    font-size: 120px;
+    line-height: 100px;
+    color: #6db0c6;
+    font-weight: 200;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.single-side img{
+    max-width: 550px;
+    width: 100%;
+}
+
+
+/* feature section start */
+.feature-section{
+    height: 250px;
+}
+.feature-items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 0px;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.feature-items li{
+    width: 30%;
+    height: 100%;
+    background-color: #ecf3e8;
+    text-align: right;
+    padding: 120px 30px 20px 30px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.feature-items li:nth-child(2){
+    background-color: #f1e5e5;
+}
+
+.feature-items li:nth-child(3){
+    background-color: #f6f3e6;
+}
+
+.feature-items li:nth-child(4){
+    background-color: #ecf4f5;
+    text-align: left;
+}
+
+.feature-items li:nth-child(2),
+.feature-items li:nth-child(3){
+    width: 20%;
+    text-align: center;
+}
+.feature-items li a{
+    display: block;
+    color: #5b3f61;
+    font-weight: 300;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 100px;
+}
