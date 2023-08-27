@@ -40,6 +40,7 @@ li{
     top: 0;
     left: 0;
     transition: .7s;
+    z-index: 9999;
 }
 .header-fix{
     position: fixed;
@@ -113,7 +114,7 @@ li{
 
 .navbar .sidebar-header a{
     font-size: 30px;
-    color: #fff;
+    color: #E84F88;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -121,7 +122,7 @@ li{
 
 .navbar .sidebar-header i{
     font-size: 24px;
-    color: #fff;
+    color: #E84F88;
     padding: 10px;
     cursor: pointer;
 }
@@ -152,6 +153,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 
@@ -217,8 +219,10 @@ li{
     background-color: #ecf3e8;
     text-align: right;
     padding: 120px 30px 20px 30px;
-    font-size: 50px;
+    font-size: 45px;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
 }
 .feature-items li:nth-child(2){
     background-color: #f1e5e5;
@@ -239,9 +243,197 @@ li{
     text-align: center;
 }
 .feature-items li a{
+    width: 100%;
     display: block;
     color: #5b3f61;
     font-weight: 300;
     font-family: 'Source Code Pro', monospace;
     line-height: 100px;
+}
+
+/* promot product section start */
+.promot-section{
+    margin: 100px 0;
+    overflow: hidden;
+}
+
+.promot-section .promot{
+    background: #F8F5F5;
+}
+
+.promot-section .promot .col-lg-5{
+    padding: 0 !important;
+}
+
+.promot-section .promot .promot-img{
+    background: #F4F0F0;
+    padding: 20px 0;
+}
+
+.promot-section .promot .promot-content{
+    padding: 50px;
+    padding-left: 40px;
+}
+.promot-section .promot .promot-content .promot-title{
+    position: relative;
+}
+.promot-section .promot .promot-content .promot-title h2{
+    font-size: 36px;
+    line-height: 40px;
+    color: #e84f88;
+    font-weight: 300;
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+}
+
+.promot-section .promot .promot-content .promot-title h2 strong{
+    font-weight: 700;
+}
+
+.promot-section .promot .promot-content .promot-title span.year-title{
+    opacity: 0.188;
+    font-size: 110px;
+    line-height: 48px;
+    color: #51abc8;
+    font-weight: bold;
+    font-family: "Code";
+    position: absolute;
+    top: 40px;
+    left: 30%;
+}
+
+.promot-section .promot .promot-content p{
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #786b7a;
+    font-weight: 400;
+    font-family: "Karla";
+}
+
+.promot-section .promot .promot-content a{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Karla";
+    text-align: center;
+    background-color: #51abc8;
+    border: 1px solid #51abc8;
+    padding: 6px 23px;
+    border-radius: 4px;
+    transition: .4s;
+
+}
+
+.promot-section .promot .promot-content a:hover{
+    background-color: #fff;
+    color: #51abc8;
+    border: 1px solid #51abc8;
+}
+
+/* clients section start */
+.client-section{
+    margin: 50px 0;
+}
+
+.client-img img{
+    max-width: 100%;
+}
+
+/* footer section start  */
+footer{
+    background-color: #f4f4f4;
+    padding: 30px 0;
+}
+
+.widget-left{
+    text-align: left;
+}
+
+.widget-left .footer-menu{
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.widget-left .footer-menu li{
+    margin-right: 7px;
+
+}
+
+.widget-left .footer-menu a{
+    font-size: 15px;
+    color: #919191;
+    font-weight: 700;
+    font-family: "Karla";
+}
+
+.widget-left p{
+    font-size: 14px;
+    color: #919191;
+    font-weight: 400;
+    font-family: "Karla";
+    margin-top: 5px;
+}
+
+.widget-right{
+    text-align: right;
+}
+
+.widget-right .footer-social{
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    justify-content: end;
+}
+
+.widget-right .footer-social li{
+    margin: 0 10px;
+
+}
+
+.widget-right .footer-social a{
+    font-size: 15px;
+    color: #919191;
+    font-weight: 700;
+    font-family: "Karla";
+}
+.widget-right .footer-social a i{
+    font-size: 18px;
+}
+
+.widget-right .footer-btns{
+    margin-top: 5px;
+}
+
+.widget-right .footer-btns{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.widget-right .footer-btns input:first-child{
+    background-color: #fff;
+    padding: 10px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    max-width: 40%;
+    width: 100%;
+}
+.widget-right .footer-btns input:last-child{
+    background-color: #e84f88;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 5px 30px;
+    font-family: "Karla";
+    text-align: center;
+    border: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 2px;
 }
