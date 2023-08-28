@@ -46,5 +46,17 @@ window.addEventListener("scroll", () => {
 
 
 $(document).ready(function(){
-    $(".section").owlCarousel();
+    $(".home-slider").owlCarousel({
+        items:1,
+        loop: true,
+        autoplay: false,
+        dots: false,
+        nav:true,
+        
+    });
+});
+
+$('.product-list').masonry({
+    // options
+    itemSelector: '.single-product-item ',
 });
