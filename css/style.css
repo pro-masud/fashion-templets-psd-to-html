@@ -128,6 +128,10 @@ li{
 }
 
 
+.header-right {
+    position: relative;
+}
+
 .header-right a{
     padding: 15px;
     display: inline-block;
@@ -136,6 +140,51 @@ li{
 .header-right a i{
     padding-left: 12px;
 }
+
+.header-right .search-input{
+    position: absolute;
+    left: -280px;
+    top: 90px;
+    width: 400px;
+    height: 47px;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: .7s;
+}
+
+.header-right .search-input::after{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+    right: 12px;
+    content: "";
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.header-right .search-input input{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.header-right.show-search .search-input{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    top: 70px;
+}
+
 
 .header-right a img{
     width: 30px;
@@ -153,7 +202,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+   
 }
 
 
@@ -257,7 +306,7 @@ li{
     overflow: hidden;
 }
 
-.promot-section .promot{
+.promot-section .promot-slider-list{
     background: #F8F5F5;
 }
 
@@ -265,19 +314,23 @@ li{
     padding: 0 !important;
 }
 
-.promot-section .promot .promot-img{
+.promot-section .promot-img{
     background: #F4F0F0;
     padding: 20px 0;
 }
 
-.promot-section .promot .promot-content{
-    padding: 50px;
-    padding-left: 40px;
+.promot-section .promot-content{
+    padding: 40px 70px 40px 40px;
 }
-.promot-section .promot .promot-content .promot-title{
+
+.single-item{
+    display: flex;
+}
+
+.promot-section .promot-content .promot-title{
     position: relative;
 }
-.promot-section .promot .promot-content .promot-title h2{
+.promot-section .promot-content .promot-title h2{
     font-size: 36px;
     line-height: 40px;
     color: #e84f88;
@@ -286,11 +339,11 @@ li{
     text-transform: uppercase;
 }
 
-.promot-section .promot .promot-content .promot-title h2 strong{
+.promot-sectiont .promot-content .promot-title h2 strong{
     font-weight: 700;
 }
 
-.promot-section .promot .promot-content .promot-title span.year-title{
+.promot-section .promot-content .promot-title span.year-title{
     opacity: 0.188;
     font-size: 110px;
     line-height: 48px;
@@ -302,7 +355,7 @@ li{
     left: 30%;
 }
 
-.promot-section .promot .promot-content p{
+.promot-section .promot-content p{
     margin-top: 30px;
     font-size: 16px;
     line-height: 30px;
@@ -311,7 +364,7 @@ li{
     font-family: "Karla";
 }
 
-.promot-section .promot .promot-content a{
+.promot-section  .promot-content a{
     display: inline-block;
     font-size: 16px;
     line-height: 30px;
@@ -327,7 +380,7 @@ li{
 
 }
 
-.promot-section .promot .promot-content a:hover{
+.promot-section .promot-content a:hover{
     background-color: #fff;
     color: #51abc8;
     border: 1px solid #51abc8;
@@ -636,4 +689,23 @@ footer{
 
 .single-product-item:hover .product-hover a{
     margin-top: -40px;
+}
+
+
+.promot-slider-list .owl-controls .owl-page{
+    width: 12px;
+    height: 12px;
+    background-color: #d3cece;
+    margin: 5px;
+    border-radius: 20px;
+}
+.promot-slider-list .owl-controls .owl-page.active{
+    background-color: #E84F88;
+}
+
+.promot-slider-list .owl-controls .owl-pagination{
+    position: absolute;
+    top:50%;
+    right: 0;
+    margin-top: -25px;
 }

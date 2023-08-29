@@ -3,6 +3,9 @@ const closeBtn = document.querySelector(".menu-toggler");
 const sideClose = document.getElementById("sideclose");
 const navbar = document.querySelector(".navbar");
 const header = document.querySelector(".header-top-area");
+const searchToggler = document.querySelector(".search_toggler");
+const headerRight = document.querySelector(".header-right");
+const searchInput = document.querySelector(".search-input");
 
 
 closeBtn.addEventListener("click", () => {
@@ -43,6 +46,16 @@ window.addEventListener("scroll", () => {
 
 });
 
+searchToggler.addEventListener("click", (e) =>{
+    headerRight.classList.toggle("show-search");
+});
+
+document.addEventListener('click', (event) => {
+    if (!searchInput.contains(event.target) && !headerRight.contains(event.target)) {
+        headerRight.classList.remove("show-search");
+    }
+});
+
 
 
 $(document).ready(function(){
@@ -52,7 +65,17 @@ $(document).ready(function(){
         autoplay: false,
         dots: false,
         nav:true,
-        
+        navText:["<i class='nav-btn prev-slide'></i>","<i class='nav-btn next-slide'></i>"]        
+    });
+});
+
+$(document).ready(function(){
+    $(".promot-slider-list").owlCarousel({
+        items:1,
+        loop: true,
+        autoplay: false,
+        dots: true,
+        nav:false,        
     });
 });
 

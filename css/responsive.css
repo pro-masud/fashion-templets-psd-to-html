@@ -98,6 +98,27 @@
     .widget-right .footer-btns input:first-child{
         max-width: 60%;
     }
+
+    .single-product-item {
+        height: 250px;
+        width: 31%;
+    }
+
+    .single-product-item:nth-child(2){
+        height: 520px;
+        width: 64%;
+    }
+    .single-product-item:nth-child(4){
+        width: 64%;
+    }
+    .single-product-item:nth-child(9){
+        width: 64%;
+    }
+
+    .header-right .search-input {
+        left: -310px;
+    }
+
 }
 
 @media (max-width:768px) {
@@ -124,6 +145,26 @@
         justify-content: center;
     }
 
+    .single-side .heading{
+        text-align: center;
+    }
+
+    .single-side .heading span{
+        line-height: 40px !important;
+    }
+
+    .single-side img{
+        display: none;
+    }
+
+    .header-right .search-input {
+        left: -260px;
+    }
+
+    .header-right .search-input {
+        width: 350px;
+    }
+
 }
 
 @media (max-width:600px) {
@@ -134,12 +175,63 @@
         font-size: 50px !important;
         line-height: 40px !important;
     }
+
+    .single-product-item {
+       
+        width: 100%;
+    }
+    .single-product-item .product-hover .product-bottom-info .product-price {
+        right: 14px;
+    }
+
+    .single-product-item:nth-child(2){
+        height: 520px;
+        width: 100%;
+    }
+    .single-product-item:nth-child(4){
+        width: 100%;
+    }
+    .single-product-item:nth-child(9){
+        width: 100%;
+    }
+
+    .header-right .search-input {
+        left: -260px;
+    }
+
+    .header-right .search-input {
+        width: 350px;
+    }
 }
 
 @media (max-width:480px){
     .single-side .heading span{
         font-size: 40px !important;
         line-height: 30px !important;
+    }
+
+    .widget-right .footer-btns{
+        flex-direction: column;
+    }
+    .widget-right .footer-btns input:last-child{
+        margin-top: 7px;
+    }
+
+    .header-right.show-search .search-input {
+        top: 60px;
+    }
+
+    .header-right .search-input {
+        position: absolute;
+        left: -241px;
+        width: 327px;
+    }
+}
+
+@media (max-width:420px){
+    .header-right .search-input {
+        left: -180px;
+        width: 293px;
     }
 }
 
